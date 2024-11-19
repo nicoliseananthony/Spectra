@@ -38,3 +38,23 @@ const MainLayout = () => {
 }
 
 export default MainLayout
+
+const renderBookItem = ({ item }) => {
+  const fadeAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.timing(fadeAnim, {
+      toValue: 1,
+      duration: 500,
+      useNativeDriver: true,
+    }).start();
+  }, []);
+
+  return (
+    <Animated.View style={{ opacity: fadeAnim }}>
+      <TouchableOpacity style={styles.bookItem} onPress={() => handlePress(item)}>
+        <Text style={styles.bookTitle}>{item.title}</Text>
+      </TouchableOpacity>
+    </Animated.View>
+  );
+};
