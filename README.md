@@ -26,16 +26,8 @@ A Movie Watching Mobile App
 <img src="assets/images/signup.png">  
 
 # Tab Screens
-# Home Tab
 <img src="assets/images/tabs.png">  
 
-# Book Browse Tab
-<img src="assets/images/book.jpg"> 
 
-# Profile Tab
-<img src="assets/images/profile.jpg"> 
-
-# Notifications Tab
-<img src="assets/images/notif.jpg"> 
 
 
